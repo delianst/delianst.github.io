@@ -1,234 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Bootstrap 5 CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
-    <body>
-        <!-- Navbar start -->
-        <nav class="navbar navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Offcanvas navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Fontawesome - for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+
+    <!-- CSS Stylesheet linking -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar start -->
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </nav>
-        <!-- Navbar end -->
-
-        <!-- Slider start -->
-        <section id="carouselExampleCaptions" class="carousel slider_section slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/slide-1.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption d-md-block">
-                        <h5>Daughter Thai</h5>
-                        <p>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <br />
-                            1700 Platte st. Suite #140
-                            <br />
-                            Denver CO 80202
-                            <br />
-                            <i class="fas fa-phone-alt"></i>
-                            (720) 667- 4652
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/slide-2.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption d-md-block">
-                        <h5>Chicago</h5>
-                        <p>Thank you, Chicago!</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/slide-3.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption d-md-block">
-                        <h5>New York</h5>
-                        <p>We love the Big Apple!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <!-- Slider end -->
-
-        <!-- Filter nav start -->
-        <div class="filter-nav">
-            <div class="container-fluid">
-                <ul>
-                    <li class="active" data-filter="all">Show all</li>
-                    <li data-filter=".main">Main Course</li>
-                    <li data-filter=".appetizer">Appetizer</li>
-                    <li data-filter=".dessert">Dessert</li>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurantPage.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addRestaurant.html">Add Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <!-- Filter nav end -->
+    </div>
+</nav>
+<!-- Navbar end -->
+<br>
+<br>
+<br>
+<!-- Form Start -->
+<div class="container">
+<form class="login-form">
+    <h2 class="text-center mb-3">LOGIN</h2>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div  class="forgot">
+   <a href="">Forgot Password?</a>
+    </div>
 
-        <!-- Food item start -->
-        <section class="foods">
-            <div class="container-fluid">
-                <div id="foods" class="row foods-row">
-                    <!-- Keep this empty -->
-                </div>
-            </div>
-        </section>
-        <!-- Food item end -->
-
-        <!-- Footer start -->
-        <footer class="footer bg-light py-5 mt-3">
-            <div class="container-fluid">
-                <div class="footer-content d-flex justify-content-between align-items-center">
-                    <p class="mb-0">
-                        Album example is © Bootstrap, but please download and customize it for yourself! <br />
-                        New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
-                    </p>
-                    <a href="#" class="back_to_top">Back To Top</a>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer end -->
-
-        <!-- Edit Modal -->
-        <div class="modal fade" id="editModal" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Upload pictures of your meal</h4>
-                        <button type="button" class="close btn" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="image_upload_form">
-                            <!-- Upload image input-->
-                            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-light shadow-sm d-flex justify-content-between align-items-center">
-                                <input id="upload" type="file" class="form-control border-0 d-none" />
-                                <label id="upload-label" for="upload" class="font-weight-light text-muted ps-2">Choose file</label>
-                                <div class="input-group-append">
-                                    <label for="upload" class="btn btn-dark m-0 rounded-pill px-4">
-                                        <i class="fas fa-cloud-upload-alt mr-2 text-muted"></i>
-                                        <small class="text-uppercase font-weight-bold text-muted">Choose file</small>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Uploaded image area-->
-                            <div class="image-area text-center" id="image_preview">
-                                <!-- Live image preview -->
-                            </div>
-
-                            <div class="form-group">
-                                <label for="comment">Comment:</label>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" id="upload_image_btn">Upload</button>
-                        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
-                    </div>
-                </div>
-            </div>
+    <div class="text-center mt-3">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+<!-- Form End -->
+<!-- Footer start -->
+<footer class="footer bg-light py-5">
+    <div class="container-fluid">
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <!-- <p class="mb-0">
+                Album example is © Bootstrap, but please download and customize it for yourself! <br />
+                New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
+            </p> -->
+            <a href="#" class="back_to_top">Back To Top</a>
         </div>
-
-        <!-- View Modal -->
-        <div class="modal fade" id="viewModal" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Modal Header</h4>
-                        <button type="button" class="close btn" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal_slider_area">
-                            <div class="slider-container" id="modalSliderContainer">
-                                <!-- Keep this empty -->
-                            </div>
-                            <div class="slider_arrows">
-                                <button class="btn slideLeft">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button class="btn slideRight">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </div>
-                            <div class="count">
-                                <span class="cornet">1</span>
-                                <span> / </span>
-                                <span class="total">6</span>
-                            </div>
-
-                            <!-- Small preview -->
-                            <div class="small_preview" id="small_preview">
-                                <!-- Keep this empty -->
-                            </div>
-
-                            <!-- Details -->
-                            <div class="details pt-3">
-                                <p>
-                                    <b><i class="fas fa-carrot"></i>Calories: </b>500<br />
-                                    <strong><i class="fas fa-tshirt"></i>Portion: </strong>Large
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scripts -->
-        <script src="assets/js/jquery.2.2.4.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/slider_data.js"></script>
-        <script src="assets/js/mixitup.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-
-        <script>
-            $(document).ready(function () {
-                var mixer = mixitup(".foods-row");
-            });
-        </script>
-    </body>
+    </div>
+</footer>
+<!-- Footer end -->
+</body>
 </html>

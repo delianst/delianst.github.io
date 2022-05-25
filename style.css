@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .footer .footer-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .footer .footer-content .back_to_top {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Login Page */
+.login-form{
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.forgot{
+    text-align: right;
+}
+.btn-primary{
+    padding-inline: 40px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .login-form{
+        min-width: 100%;
+    }
+
+}
+
+/* Profile Page */
+
+.profile-image{
+    width: 70%;
+    height: auto;
+}
+.profile-list{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+.post-images{
+    width: 100%;
+    height: 250px;
+}
+@media screen and (max-width: 767px) {
+.profile-image{
+    min-width: 100%;
+}
+    .btn-light{
+        min-width: 100%;
+    }
+    .padding-0{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .profile-list-mb-2 , .profile-description{
+        display: none;
+    }
+    .post-images{
+        min-width: 100%;
+        height: 100%;
+
+        padding: 1px;
+    }
+    .mb-line{
+        display: none;
+    }
+    .profile-list-mb-3{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-list-mb-3 li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line{
+        position: relative;
+        top: -15px;
+    }
+.profile-list-mb{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+
+@media (min-width: 768px) {
+
+    .mobile-profile-section{
+        display: none;
+    }
+
+}
+
+.modal.find-food-addr .modal-body > img {
+    height: 320px;
+    object-fit: cover;
+}
+
+
+.modal.find-food-addr .modal-body .details ul li span {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.modal.find-food-addr .modal-body .details ul li span:first-child {
+    font-weight: bold;
+    width: 120px;
+}
+
+.modal.find-food-addr .btn-close {
+    position: absolute;
+    top: 26px;
+    right: 28px;
+    z-index: 2;
+    filter: invert(99%) sepia(4%) saturate(273%) hue-rotate(165deg) brightness(115%) contrast(100%);
+}
+
+.res-item h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.res-item .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 10px;
+}
+
+form .image-preview img {
+    width: 180px;
+    height: auto !important;
+}
+
+form .image-preview {
+    display: none;
+}
+
+#food_table tr td {
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+
+    .images-row{
+        margin-top: 25px;
+    }
+    .images-row-2{
+        margin-top: 10px;
+    }
+    .profile{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .mobile-view{
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+.login-form{
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+    .profile{
+        margin-top: 80px;
+    }
+    .img-row-1{
+        margin-top: -40px;
+    }
+    .add-btn{
+        min-width: 100%;
+        margin-top: -20px;
+    }
+    .rest-footer{
+        margin-top: -30px;
+    }
+    .desktop-view{
+        display: none;
+    }
+
+
+
+    .btn-light , .follow-btn{
+        padding-inline: 20px;
+        padding-block: 5px;
+        font-size: 14px;
+
+    }
+
+}
+.p-img-2{
+    margin-top: 20px;
+}

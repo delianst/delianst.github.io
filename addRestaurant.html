@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Restaurant</title>
+
+        <!-- Bootstrap 5 CDN Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+        <!-- Fontawesome - for icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+            integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+            crossorigin="anonymous"
+        />
+
+        <!-- CSS Stylesheet linking -->
+        <link href="style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+    <!-- Navbar start - Desktop -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurantPage.html">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="addRestaurant.html">Add Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+        <br />
+        <br />
+        <br />
+        <!-- profile header Start -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assets/images/profile-image.png" class="img-fluid profile-image" alt="profile-image" />
+                    </div>
+
+                    <div class="col-8">
+                        <ul class="profile-list profile-list-mb desktop-view">
+                            <li><h5 class="pt-2">User100</h5></li>
+                            <li><button class="btn btn-light">Edit Profile</button></li>
+                            <li><button class="btn btn-primary">Follow</button></li>
+                        </ul>
+                        <h5 class="pt-2 mobile-view">User100</h5>
+                        <ul class="profile-list mobile-view">
+                            <li><button class="btn btn-light">Edit Profile</button></li>
+                            <li><button class="btn btn-primary follow-btn">Follow</button></li>
+                        </ul>
+
+                        <br />
+
+                        <ul class="profile-list profile-list-mb-2">
+                            <li>6 Posts</li>
+                            <li>120 Followers</li>
+                            <li>300 Following</li>
+                        </ul>
+
+                        <div class="mt-5 profile-description">
+                            <h5>Adam Milk</h5>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- profile description for mobile screens -->
+                <section class="mobile-profile-section">
+                    <div>
+                        <h5>Adam Milk</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <div>
+                        <hr />
+                        <ul class="profile-list profile-list-mb-3">
+                            <li>
+                                <b>6 </b>
+                                <p>Posts</p>
+                            </li>
+                            <li>
+                                <b>120</b>
+                                <p>Followers</p>
+                            </li>
+                            <li>
+                                <b>300 </b>
+                                <p>Following</p>
+                            </li>
+                        </ul>
+                        <hr class="line" />
+                    </div>
+                </section>
+
+                <!-- Posts Grid -->
+                <hr class="mb-line" />
+                <div class="d-flex align-items-center pb-3">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#addRes" class="btn btn-primary add-btn ms-auto">Add Restaurant</button>
+                </div>
+
+                <!-- Restaurant List -->
+                <div class="row" id="restaurantList">
+                    <!-- Keep this empty -->                    
+                </div>
+            </div>
+        </section>
+        <!-- profile header End --><br />
+        <!-- Footer start -->
+        <footer class="footer bg-light py-5 rest-footer">
+            <div class="container-fluid">
+                <div class="footer-content d-flex justify-content-between align-items-center">
+                    <p class="mb-0">
+                        Album example is © Bootstrap, but please download and customize it for yourself! <br />
+                        New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
+                    </p>
+                    <a href="#" class="back_to_top">Back To Top</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- Add Restaurant -->
+        <div class="modal fade find-food-addr" id="addRes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addResLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <form id="addResForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="res-name" class="form-label">Restaurant Name</label>
+                            <input name="name" type="text" required class="form-control" id="res-name" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="res-add" class="form-label">Restaurant Address</label>
+                            <input name="address" type="text" required class="form-control" id="res-add">
+                          </div>
+                          <div class="mb-3">
+                            <label for="res-abo" class="form-label">About Restaurant</label>
+                            <input name="about" type="text" required class="form-control" id="res-abo">
+                          </div>
+                          <div class="mb-3">
+                            <label for="res-rat" class="form-label">Restaurant Rating</label>
+                            <input name="ratting" type="number" required class="form-control" id="res-rat">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label">Restaurant Image</label>
+                            <input required class="form-control" type="file" id="formFile">
+                        </div>
+                        
+                        <div class="image-preview">
+                              <input type="text" name="image" class="d-none">
+                              <img src="assets/images/one.jpg" alt="img">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Restaurant -->
+        <div class="modal fade find-food-addr" id="viewRes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="viewResLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="modal-body">
+                        <img src="assets/images/one.jpg" class="img-fluid food-img w-100" alt="img">
+
+                        <div class="food-info">
+                            <div class="table-responsive">
+                                <table class="table table-striped mt-3">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Size</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="food_table">
+                                      
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Add Food -->
+        <div class="modal fade find-food-addr" id="addFood" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addFoodLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <form id="add_food">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="food-name" class="form-label">Food Name</label>
+                            <input name="name" type="text" required class="form-control" id="food-name" aria-describedby="emailHelp">
+                          </div>
+
+                        <div class="mb-3">
+                            <label for="food-price" class="form-label">Food Price</label>
+                            <input name="price" type="number" required class="form-control" id="food-price" aria-describedby="emailHelp">
+                          </div>
+
+                        <div class="mb-3">
+                            <label for="food-size" class="form-label">Food Size</label>
+                            <input name="size" type="number" required class="form-control" id="food-size" aria-describedby="emailHelp">
+                          </div>
+                          
+                          <div class="mb-3">
+                            <label for="food-image-2" class="form-label">Food Image</label>
+                            <input class="form-control" type="file" id="food-image-2">
+                          </div>
+
+                          <div class="image-preview">
+                              <input type="text" class="d-none" name="image">
+                              <img src="assets/images/one.jpg" alt="img">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <script src="add_restaurant.js"></script>
+    </body>
+</html>

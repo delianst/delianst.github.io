@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome - for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+
+    <!-- CSS Stylesheet linking -->
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar start -->
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurantPage.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="explore.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addRestaurant.html">Add Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- profile header Start -->
+<section class="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+
+                <img src="assets/images/profile-image.png" class="img-fluid profile-image" alt="profile-image">
+
+            </div>
+
+            <div class="col-8">
+
+                <ul class="profile-list profile-list-mb desktop-view">
+                    <li><h5 class="pt-2">User100</h5></li>
+                    <li><button class="btn btn-light">Edit Profile</button></li>
+                    <li><button class="btn btn-primary">Follow</button></li>
+                </ul>
+                <h5 class="pt-2 mobile-view">User100</h5>
+                <ul class="profile-list mobile-view">
+                    <li><button class="btn btn-light">Edit Profile</button></li>
+                    <li><button class="btn btn-primary follow-btn">Follow</button></li>
+                </ul>
+
+                <br>
+
+                <ul class="profile-list profile-list-mb-2">
+                    <li>6 Posts</li>
+                    <li>120 Followers</li>
+                    <li>300 Following</li>
+                </ul>
+
+                <div class="mt-5 profile-description">
+                    <h5>Adam Milk</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- profile description for mobile screens -->
+<section class="mobile-profile-section">
+        <div>
+            <h5>Adam Milk</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div>
+            <hr>
+            <ul class="profile-list profile-list-mb-3">
+                <li><b>6 </b><p>Posts</p></li>
+                <li><b>120</b> <p>Followers</p></li>
+                <li><b>300 </b><p>Following</p></li>
+            </ul>
+            <hr class="line">
+        </div>
+
+
+</section>
+        <hr class="mb-line">
+        <!-- Posts Grid -->
+        <div class="row img-row-1">
+
+            <div class="col-4 padding-0">
+               <img src="assets/images/p-1.jpg" class="post-images p-img-2" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-2.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-3.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+        </div>
+
+        <div class="row images-row-2">
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-1.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-2.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-3.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+        </div>
+
+        <div class="row images-row-2">
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-1.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-2.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+
+            <div class="col-4 padding-0">
+                <img src="assets/images/p-3.jpg" class="p-img-2 post-images" alt="Post-images">
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- profile header End -->
+<!-- Footer start -->
+<footer class="footer bg-light py-5">
+    <div class="container-fluid">
+        <div class="footer-content d-flex justify-content-between align-items-center">
+            <p class="mb-0">
+                Album example is © Bootstrap, but please download and customize it for yourself! <br />
+                New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.
+            </p>
+            <a href="#" class="back_to_top">Back To Top</a>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+</body>
+</html>
